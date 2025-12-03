@@ -1,0 +1,20 @@
+0 verbose cli /opt/homebrew/Cellar/node/23.11.0/bin/node /opt/homebrew/bin/npm
+1 info using npm@10.9.2
+2 info using node@v23.11.0
+3 silly config load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/arpitmishra/.npmrc
+5 silly config load:file:/opt/homebrew/etc/npmrc
+6 verbose title npm create vite@latest . --template react --force
+7 verbose argv "create" "vite@latest" "." "--" "--template" "react" "--force"
+8 verbose logfile logs-max:10 dir:/Users/arpitmishra/Desktop/StockTracker/.npm-cache/_logs/2025-11-14T07_03_09_955Z-
+9 verbose logfile /Users/arpitmishra/Desktop/StockTracker/.npm-cache/_logs/2025-11-14T07_03_09_955Z-debug-0.log
+10 silly logfile done cleaning log files
+11 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+12 http fetch GET 200 https://registry.npmjs.org/create-vite 180ms (cache revalidated)
+13 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+14 verbose cwd /Users/arpitmishra/Desktop/StockTracker
+15 verbose os Darwin 25.0.0
+16 verbose node v23.11.0
+17 verbose npm  v10.9.2
+18 verbose exit 0
+19 info ok

@@ -1,0 +1,21 @@
+# Node
+node_modules/
+npm-debug.log
+
+# Vite
+dist/
+
+# Mac junk
+.DS_Store
+
+# Env keys
+.env
+.env.local
+
+# Frontend build
+client/node_modules/
+client/dist/
+
+# Backend build
+server/node_modules/
+server/dist/
