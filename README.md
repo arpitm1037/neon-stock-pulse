@@ -5,6 +5,8 @@ It provides real-time stock data, interactive charts, watchlist support, and a f
 
 The app fetches stock data from NSE India and Yahoo Finance, with a backup offline dataset and synthetic chart generator for reliability.
 
+
+
 🚀 Features
 1. Neon-Themed UI
 
@@ -14,11 +16,15 @@ Clean and modern cards for stock display
 
 Fully responsive layout
 
+
+
 2. Real-Time Stock Data
 
 Fetches live stock data from NSE
 
 Backend handles session cookies & retries automatically
+
+
 
 3. Interactive Stock Charts
 
@@ -26,11 +32,15 @@ Historical price charts powered by Yahoo Finance API
 
 Automatically switches to synthetic chart data if API fails
 
+
+
 4. Powerful Search Functionality
 
 Search stocks instantly by symbol
 
 Fast filtering for large datasets
+
+
 
 5. Watchlist Management
 
@@ -39,6 +49,8 @@ Add or remove stocks from watchlist
 Watchlist is saved using localStorage
 
 Persisted even after page refresh
+
+
 
 6. Fallback & Offline Support
 
@@ -50,6 +62,8 @@ Generates synthetic 30-day price history
 
 Ensures UI never breaks
 
+
+
 7. Full Backend Integration
 
 Node.js + Express server
@@ -57,6 +71,8 @@ Node.js + Express server
 Cookie Manager to access NSE endpoints safely
 
 Robust retry & error handling
+
+
 
 🛠️ Tech Stack
 Frontend
@@ -87,10 +103,14 @@ Yahoo Finance API
 
 Error handling, retries, fallback switching
 
+
+
 🔌 API Endpoints (Backend)
 1. /api/stocks
 
 Fetches live stock list from NSE (500 index).
+
+
 
 2. /api/chart/:symbol
 
@@ -103,6 +123,8 @@ NSE India (requires session cookies)
 Yahoo Finance Chart API
 
 If these fail → fallback & synthetic data is used.
+
+
 
 🧠 How the Backend Works
 
@@ -120,6 +142,8 @@ Retries automatically on 401/403 errors
 
 Ensures stable NSE access
 
+
+
 2. Yahoo Finance Chart Fetching
 
 Fetches timestamps + closing prices
@@ -133,6 +157,8 @@ Uses .NS and .BO tickers as backup options
 If all APIs fail, backend returns predefined static data
 
 Frontend will generate synthetic chart data using buildHistory()
+
+
 
 🧪 Synthetic & Fallback Data
 
@@ -154,6 +180,8 @@ Looks realistic and smooth
 
 Ensures chart never breaks
 
+
+
 📂 Project Structure
 /server
   index.js
@@ -171,11 +199,15 @@ README.md
 package.json
 vite.config.js
 
+
+
 🖥️ Installation & Setup
 Backend Setup
 cd server
 npm install
 npm run dev   // or node index.js
+
+
 
 Frontend Setup
 npm install
@@ -187,6 +219,8 @@ Create .env in root:
 
 VITE_API_BASE_URL=http://localhost:8080
 SERVER_PORT=8080
+
+
 
 🌍 Deployment
 Frontend Deployment
@@ -207,6 +241,8 @@ Update frontend .env:
 
 VITE_API_BASE_URL=https://your-backend-url.com
 
+
+
 📘 How the App Works – Summary
 
 User opens app → frontend requests /api/stocks
@@ -223,6 +259,8 @@ Watchlist is stored in localStorage
 
 This ensures speed, reliability, and zero downtime in UI display.
 
+
+
 ✨ Key Learnings / Highlights
 
 Handling protected APIs using session cookies
@@ -236,6 +274,8 @@ Designing neon-themed UI with smooth interactions
 Proxying external APIs securely
 
 Using synthetic data to prevent UI breakage
+
+
 
 📄 License
 
